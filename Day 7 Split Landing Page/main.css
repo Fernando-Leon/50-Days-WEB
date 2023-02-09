@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: all 1.5s ease-out;
+}
+
+#play {
+    background-image: url('ps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left; 
+    position: relative; 
+}
+
+#play::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 115, 226, 0.8);
+    overflow: hidden;
+}
+
+#xbox::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+#xbox {
+    position: relative;
+    background-image: url('xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;    
+}
+
+.bg-img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.bg-img div {
+    color: #FFF;
+    font-size: 40px;
+}
+
+.bg-img div h2 {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.center-btn {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img div div button{
+    color: #FFF;
+    border: solid 3px #FFF;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#btn-ps:hover {
+    background-color: #7573E2;
+    border: #7573E2 solid 3px;
+}
+
+#btn-xbox:hover {
+    background-color: #1C7A1C;
+    border: #1C7A1C solid 3px;
+}

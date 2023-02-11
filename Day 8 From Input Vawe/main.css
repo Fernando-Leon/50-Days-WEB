@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Muli, sans-serif;
+}
+
+:root {
+    --mainColor: #4682B4;
+    --secondColor: #2A4E6C;
+    --thirdColor: #ADD8E6;
+    --extrColor: #FFF;
+    --sizeRadius: 5px;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+#form {
+    min-width: 25vw;
+    height: auto;
+    padding: 0px 40px;
+    background-color: var(--secondColor);
+    border-radius: var(--sizeRadius);
+}
+
+.cont {
+    width: 100%;
+    padding: 30px 0px;
+    color: #FFF;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--thirdColor);
+    border: none;
+    border-radius: var(--sizeRadius);
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+ 
+a {
+    color: #A9D8E6;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--extrColor);
+    padding-bottom: 3px;
+    border-bottom: 2px var(--extrColor) solid;
+    transition: all .3s ease-in-out;
+}
+
+label {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+}
+
+input:focus {
+    border-bottom: solid 2px #A9D8E6;
+}
